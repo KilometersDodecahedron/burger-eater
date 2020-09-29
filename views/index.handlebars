@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    <img class="burger-image" src="/assets/img/burger.png" alt="Giant Burger">
+
+    <!-- page header -->
+    <header class="jumbotron jumbotron-fluid row">
+        <div class="container">
+            <h1 class="display-3">BURGERS!!!</h1>
+        </div>
+    </header>
+    
+    {{!-- Holds 2 columns, uneaten on the left, eaten on the right --}}
+    <div class="row">
+        <div class="col-md-6">
+            <h2>To Eat</h2>
+            <ol>
+                {{#each burgers}}
+                    {{#unless devoured}}
+                        {{> burger-block edible=true}}  
+                    {{/unless}}   
+                {{/each}}
+            </ol>
+        </div>
+        <div class="col-md-6">
+        <h2>Eaten</h2>
+            <ol>
+                {{#each burgers}}
+                    {{#if devoured}}
+                        {{> burger-block}}  
+                    {{/if}}   
+                {{/each}}
+            </ol>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="burger-input">Upload New Burgers Here</label>
+        <textarea class="form-control" id="burger-input" rows="1"></textarea>
+    </div>
+    <button type="button" class="btn btn-success upload-button">Upload Burger</button>
+</div>

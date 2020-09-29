@@ -1,0 +1,29 @@
+/* the burger banner */
+.burger-image {
+    max-width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* button to add another burger */
+.upload-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+/* button to eat the burger */
+.devour-burger {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.jumbotron{
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}

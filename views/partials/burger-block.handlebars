@@ -1,0 +1,11 @@
+<li>
+    <span class="burger-name-display">
+        {{burger_name}}
+    </span>
+
+    {{#if edible}}
+    <button class="devour-burger btn btn-primary" data-id="{{id}}">
+        <p>Eat Me!</p>
+    </button>
+    {{/if}}
+</li>
