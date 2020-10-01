@@ -2,7 +2,7 @@
 
 ## A simple program I created to practice working with an ORM & MvC layout, as well as working with the Handlebars Template Engine.
 
-[Click Here to try it, if you'd like]()
+[Click Here to try it, if you'd like](https://fathomless-sierra-72682.herokuapp.com/)
 
 Press the button next to a burger on the left to "Eat" the burger, moving it to the right side of the screen.
 
